@@ -1,6 +1,19 @@
+def conversor_pesos(valor_dolar):
+  moneda = int(input("Dijite la cantidad de pesos: " ))
+  moneda = moneda / valor_dolar
+  moneda = round(moneda, 2)
+  print(f"Tiene $ {moneda} dolares")
+
+def conversor_dolar(valor_peso):
+  moneda = int(input("Dijite la cantidad de dolares: " ))
+  moneda = moneda * valor_peso
+  moneda = round(moneda, 2)
+  print(f"Tiene $ {moneda} pesos")
+
+
 while True:
   print("""
-Bienvenido al sistema para convertir su dinero, por favor elija una de las siguientes opciones:
+Bienvenido al sistema para convertir su 💰, por favor elija una de las siguientes opciones:
       
   1. Convertir pesos colombianos a dolares
   2. Convertir pesos mexicanos a dolares
@@ -14,40 +27,22 @@ Bienvenido al sistema para convertir su dinero, por favor elija una de las sigui
   
   #Moneda colombiana a dolares
   if opcion == 1:
-    moneda = int(input("Dijite la cantidad de pesos colombianos: "))
-    moneda = moneda / 4080
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} dolares")
+    conversor_pesos(4080)
   #Moneda mexicana a dolares
   elif opcion == 2:
-    moneda = float(input("Dijite la cantidad de pesos mexicanos: "))
-    moneda = moneda / 20.01
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} dolares")
+    conversor_pesos(20.01)
   #Moneda Argentina a dolares
   elif opcion == 3:
-    moneda = float(input("Dijite la cantidad de pesos argentinos: "))
-    moneda = moneda / 124.11
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} dolares")
+    conversor_pesos(124.11)
   #Dolares a moneda colombiana
   elif opcion == 4:
-    moneda = float(input("Dijite la cantidad de dolares: "))
-    moneda = moneda * 4080
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} pesos colombianos")
+    conversor_dolar(4080)
   #Dolares a moneda mexicana
   elif opcion == 5:
-    moneda = float(input("Dijite la cantidad de dolares: "))
-    moneda = moneda * 20.01
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} pesos mexicanos")
+    conversor_dolar(20.01)
   #Dolares a moneda argentina
   elif opcion == 6:
-    moneda = float(input("Dijite la cantidad de dolares: "))
-    moneda = moneda * 124.11
-    moneda = round(moneda, 2)
-    print(f"Tiene $ {moneda} pesos argentinos")
+    conversor_dolar(124.11)
   #salir
   elif opcion == 7:
     print("gracais por usar nuestros servicios, adios")
