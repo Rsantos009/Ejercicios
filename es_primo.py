@@ -17,7 +17,7 @@ def run():
   if es_primo(numero):
     print("es primo")
   else:
-    print("No es primo")
+    print("No es primO")
 
 if __name__ == "__main__":
   run()
