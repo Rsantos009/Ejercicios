@@ -1,3 +1,3 @@
 # Ejercicios
 
-Ejercicios de practica ara aprender Python
+Ejercicios de practica para aprender Python
